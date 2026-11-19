@@ -34,7 +34,9 @@ These activities were performed in a controlled, educational lab environment usi
 I downloaded and installed John the Ripper (JTR) and the Johnny GUI on my Windows machine. After installation, I configured Johnny by browsing to the `john.exe` executable file located in the JTR installation folder (`run` directory).
 
 ![](rp1.JPG)
+
 ![](rp2.JPG)
+
 ![](rp3.JPG)
 
 Click on settings & browse
@@ -50,26 +52,34 @@ Select John.exe
 To crack the password, the first step is to extract the hash from the locked PDF (`My Locked PDF1.pdf`). I used the OnlineHashCrack PDF Hash Extractor tool, uploaded the PDF, and copied the resulting `$pdf$...` hash value.
 
 ![](rp7.JPG)
+
 ![](rp8.JPG)
+
 ![](rp9.JPG)
 
 #### Step 3: Preparing the Hash File
 I opened Notepad, pasted the extracted hash, and saved the file as `hash1.txt`. 
 *(Note: I ensured the hash started exactly with `$pdf$` and removed any extra formatting characters).*
 
-![Notepad Hash File](YOUR_IMAGE_LINK_HERE)
-![](rp9.JPG)
-![](rp9.JPG)
+![](rp16.JPG)
+
+![](rp10.JPG)
 
 #### Step 4: Cracking with Johnny
-I opened Johnny, loaded the `hash1.txt` file, and clicked **"Start new attack."** The tool successfully processed the hash and recovered the password: `password1`.
+I opened Johnny, loaded the `hash1.txt` file, and clicked **"Start new attack."** The tool successfully processed the hash and recovered the password: `good-luck`.
 
-![Johnny Cracked](YOUR_IMAGE_LINK_HERE)
+![](rp11.JPG)
+
+![](rp12.JPG)
+
+![](rp13.JPG)
 
 #### Step 5: Verification
-I opened the encrypted PDF file, entered the recovered password (`password1`), and successfully unlocked the document, revealing the "Congratulations" flag.
+I opened the encrypted PDF file, entered the recovered password (`good-luck`), and successfully unlocked the document, revealing the "Congratulations" flag.
 
-![Unlocked PDF](YOUR_IMAGE_LINK_HERE)
+![](rp14.JPG)
+
+![](rp15.JPG)
 
 ---
 
@@ -78,17 +88,27 @@ I opened the encrypted PDF file, entered the recovered password (`password1`), a
 #### Step 1: Using the Hash Calculator
 I navigated to the Networkwalks Hash Calculator web tool. I uploaded the same `My Locked PDF1.pdf` file. The tool automatically parsed the file and extracted the crackable hash.
 
-![NW Hash Calculator](YOUR_IMAGE_LINK_HERE)
+![](hc1.JPG)
+
+![](hc2.JPG)
 
 #### Step 2: Using the Password Cracker
 I copied the extracted hash and navigated to the Networkwalks Password Cracker web tool. I pasted the hash into the input field and initiated the cracking process. 
 
-![NW Password Cracker](YOUR_IMAGE_LINK_HERE)
+![](hc3.JPG)
+
+![](hc4.JPG)
+
+![](hc5.JPG)
 
 #### Step 3: Successful Crack
 The web-based tool successfully processed the hash and revealed the password: `password1`.
 
-![NW Cracked Success](YOUR_IMAGE_LINK_HERE)
+![](hc6.JPG)
+
+![](hc7.JPG)
+
+![](hc8.JPG)
 
 ---
 
