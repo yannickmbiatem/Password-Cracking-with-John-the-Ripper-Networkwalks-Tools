@@ -33,18 +33,33 @@ These activities were performed in a controlled, educational lab environment usi
 #### Step 1: Installation and Setup
 I downloaded and installed John the Ripper (JTR) and the Johnny GUI on my Windows machine. After installation, I configured Johnny by browsing to the `john.exe` executable file located in the JTR installation folder (`run` directory).
 
-![Johnny Settings](YOUR_IMAGE_LINK_HERE)
+![](rp1.JPG)
+![](rp2.JPG)
+![](rp3.JPG)
+
+Click on settings & browse
+
+![](rp4.JPG)
+
+Select John.exe
+
+![](rp5.JPG)
+
 
 #### Step 2: Hash Extraction
 To crack the password, the first step is to extract the hash from the locked PDF (`My Locked PDF1.pdf`). I used the OnlineHashCrack PDF Hash Extractor tool, uploaded the PDF, and copied the resulting `$pdf$...` hash value.
 
-![Hash Extraction](YOUR_IMAGE_LINK_HERE)
+![](rp7.JPG)
+![](rp8.JPG)
+![](rp9.JPG)
 
 #### Step 3: Preparing the Hash File
 I opened Notepad, pasted the extracted hash, and saved the file as `hash1.txt`. 
 *(Note: I ensured the hash started exactly with `$pdf$` and removed any extra formatting characters).*
 
 ![Notepad Hash File](YOUR_IMAGE_LINK_HERE)
+![](rp9.JPG)
+![](rp9.JPG)
 
 #### Step 4: Cracking with Johnny
 I opened Johnny, loaded the `hash1.txt` file, and clicked **"Start new attack."** The tool successfully processed the hash and recovered the password: `password1`.
